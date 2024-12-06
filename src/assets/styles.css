@@ -1,0 +1,72 @@
+/* Untuk styling responsif */
+@media (max-width: 768px) {
+  .container {
+    padding: 0 1rem;
+  }
+  input, button {
+    font-size: 0.85rem;
+  }
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .tabs {
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .tabs li {
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  
+  .tabs li.active {
+    color: #007bff;
+    border-bottom: 2px solid #007bff;
+  }
+  
+  .search-bar input {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    display: block;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  /* Grid layout untuk photos */
+  .photos {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 10px;
+    padding: 10px;
+  }
+  
+  .photos img {
+    border-radius: 8px;
+    max-width: 100%;
+  }
+  
+  /* Info Section Styling */
+  .info {
+    padding: 20px;
+  }
+  
+  /* Responsif untuk mobile */
+  @media (max-width: 768px) {
+    .tabs {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .tabs li {
+      width: 100%;
+      text-align: center;
+    }
+  }
+  
